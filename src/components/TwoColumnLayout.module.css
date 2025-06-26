@@ -17,20 +17,24 @@
   pointer-events: auto;
 }
 
-.mainWrapper {
+.sectionWrapper {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 305px;
+  min-height: 100px;
+  background-color: rgba(255, 255, 255, 1);
   padding: 20px;
+  border: 1px solid rgba(235, 235, 235, 1);
 }
 
-.mainSection {
+.section {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 305px;
+  min-height: 100px;
+  background-color: rgba(255, 255, 255, 1);
   padding: 20px;
+  border: 1px solid rgba(235, 235, 235, 1);
   width: 100%;
   align-self: stretch;
   flex-grow: 1;
@@ -39,24 +43,29 @@
   margin-right: auto;
 }
 
-.contentWrapper {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-top: 20px;
+.imageColumnsWrapper {
+  height: auto;
+  width: auto;
+  pointer-events: auto;
 }
 
-.columnsContainer {
-  gap: 20px;
+.imageColumnsContainer {
   display: flex;
+  height: auto;
+  width: auto;
+  pointer-events: auto;
 }
 
-@media (max-width: 991px) {
-  .columnsContainer {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0px;
-  }
+.imageSection {
+  display: flex;
+  height: auto;
+  pointer-events: auto;
+}
+
+.imageContentWrapper {
+  display: flex;
+  height: auto;
+  pointer-events: auto;
 }
 
 .columnLeft {
