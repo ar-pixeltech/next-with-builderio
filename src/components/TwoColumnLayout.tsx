@@ -2,8 +2,20 @@
 import React from "react";
 import styles from "./TwoColumnLayout.module.css";
 
+/**
+ * TwoColumnLayout Component
+ *
+ * A responsive two-column layout component featuring:
+ * - Left column with background image and overlay text
+ * - Right column with a standalone image
+ * - Responsive design that stacks columns on mobile
+ * - Configurable max width and lazy loading
+ */
+
 interface TwoColumnLayoutProps {
+  /** Maximum width of the layout container in pixels */
   maxWidth?: number;
+  /** Enable lazy loading for images */
   lazyLoad?: boolean;
 }
 
