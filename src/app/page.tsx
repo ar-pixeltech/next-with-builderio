@@ -2,8 +2,9 @@
 // You could alternatively use src/app/[...page]/page.tsx
 import { builder } from "@builder.io/sdk";
 import { RenderBuilderContent } from "../components/builder";
+import TwoColumnLayout from "../components/TwoColumnLayout";
 
-const PUBLIC_API_KEY = "358fb1baf0df4a24838c490ec295504f"
+const PUBLIC_API_KEY = "358fb1baf0df4a24838c490ec295504f";
 
 // Replace with your Public API Key
 builder.init(PUBLIC_API_KEY);
@@ -31,6 +32,8 @@ export default async function Page(props: PageProps) {
 
   return (
     <>
+      {/* Render the TwoColumn Layout */}
+      <TwoColumnLayout maxWidth={1200} lazyLoad={false} />
       {/* Render the Builder page */}
       <RenderBuilderContent content={content} model={model} />
     </>

@@ -1,0 +1,221 @@
+.layoutContainer {
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+  color: rgb(237, 237, 237);
+  background-color: rgb(255, 255, 255);
+  font:
+    400 16px/24px Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.hiddenElement {
+  display: none;
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border: 1px solid rgba(235, 235, 235, 1);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border: 1px solid rgba(235, 235, 235, 1);
+  width: 100%;
+  align-self: stretch;
+  flex-grow: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageColumnsWrapper {
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+}
+
+.imageColumnsContainer {
+  display: flex;
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+}
+
+.imageSection {
+  display: flex;
+  height: auto;
+  pointer-events: auto;
+}
+
+.imageContentWrapper {
+  display: flex;
+  height: auto;
+  pointer-events: auto;
+}
+
+.columnLeft {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 0px;
+}
+
+@media (max-width: 991px) {
+  .columnLeft {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 17px;
+  margin-top: 20px;
+  width: 100%;
+  min-height: 400px;
+  min-width: 20px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.columnText {
+  background-color: rgba(206, 82, 82, 0);
+  color: rgb(179, 47, 47);
+}
+
+.columnRight {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .columnRight {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.columnImage {
+  aspect-ratio: 1.42;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  margin-top: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  overflow: hidden;
+}
+
+.builderContentWrapper {
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+}
+
+.builderModelContainer {
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+}
+
+.builderPlaceholder {
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+}
+
+.servicesWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 20px;
+}
+
+.servicesContent {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.servicesTitle {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.servicesDescription {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.packagesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.packageCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.packageTitle {
+  font-size: 20px;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.packageDescription {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.packagePrice {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+}
