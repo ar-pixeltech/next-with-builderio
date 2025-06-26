@@ -1,0 +1,146 @@
+.layout-container {
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+  color: rgb(237, 237, 237);
+  background-color: rgb(10, 10, 10);
+  font:
+    400 16px/24px Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.hidden-element {
+  display: none;
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 305px;
+  padding: 20px;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 305px;
+  padding: 20px;
+  width: 100%;
+  align-self: stretch;
+  flex-grow: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 20px;
+}
+
+.columns-container {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .columns-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 0px;
+}
+
+@media (max-width: 991px) {
+  .column-left {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 17px;
+  margin-top: 20px;
+  width: 100%;
+  min-height: 400px;
+  min-width: 20px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.column-text {
+  background-color: rgba(206, 82, 82, 0);
+  color: rgb(179, 47, 47);
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .column-right {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.column-image {
+  aspect-ratio: 1.42;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  margin-top: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  overflow: hidden;
+}
+
+.builder-content-wrapper {
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+}
+
+.builder-model-container {
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+}
+
+.builder-placeholder {
+  height: auto;
+  width: auto;
+  pointer-events: auto;
+}
