@@ -1,8 +1,8 @@
 // components/builder.tsx
 "use client";
 import { ComponentProps } from "react";
-import { BuilderComponent, useIsPreviewing, builder } from "@builder.io/react";
-import { BuilderContent } from "@builder.io/sdk";
+import { BuilderComponent, useIsPreviewing } from "@builder.io/react";
+import { BuilderContent, builder } from "@builder.io/sdk";
 import DefaultErrorPage from "next/error";
 import TwoColumnLayout from "./TwoColumnLayout";
 
