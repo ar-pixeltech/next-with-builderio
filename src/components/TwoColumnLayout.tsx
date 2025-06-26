@@ -26,15 +26,23 @@ export default function TwoColumnLayout({
   return (
     <div className={styles.layoutContainer}>
       <div className={styles.hiddenElement} />
-      <div className={styles.mainWrapper} style={{ maxWidth }}>
-        <section className={styles.mainSection}>
-          <div className={styles.contentWrapper}>
-            <div className={styles.columnsContainer}>
+
+      {/* First Section */}
+      <div className={styles.sectionWrapper} style={{ maxWidth }}>
+        <section className={styles.section}></section>
+      </div>
+
+      {/* Image Columns Section */}
+      <div className={styles.imageColumnsWrapper}>
+        <div className={styles.hiddenElement} />
+        <div className={styles.imageColumnsContainer}>
+          <section className={styles.imageSection}>
+            <div className={styles.imageContentWrapper}>
               <div className={styles.columnLeft}>
                 <div className={styles.imageContainer}>
                   <img
-                    loading={lazyLoad ? "lazy" : "eager"}
-                    srcSet="https://cdn.builder.io/api/v1/image/assets%2F358fb1baf0df4a24838c490ec295504f%2Fea3b5340ff424b09a73ff59c731e6e7e?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F358fb1baf0df4a24838c490ec295504f%2Fea3b5340ff424b09a73ff59c731e6e7e?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F358fb1baf0df4a24838c490ec295504f%2Fea3b5340ff424b09a73ff59c731e6e7e?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F358fb1baf0df4a24838c490ec295504f%2Fea3b5340ff424b09a73ff59c731e6e7e?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F358fb1baf0df4a24838c490ec295504f%2Fea3b5340ff424b09a73ff59c731e6e7e?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F358fb1baf0df4a24838c490ec295504f%2Fea3b5340ff424b09a73ff59c731e6e7e?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F358fb1baf0df4a24838c490ec295504f%2Fea3b5340ff424b09a73ff59c731e6e7e?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F358fb1baf0df4a24838c490ec295504f%2Fea3b5340ff424b09a73ff59c731e6e7e"
+                    loading="eager"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F358fb1baf0df4a24838c490ec295504f%2Fea3b5340ff424b09a73ff59c731e6e7e?width=2000"
                     alt="Column 1 Image"
                     className={styles.backgroundImage}
                   />
@@ -43,16 +51,73 @@ export default function TwoColumnLayout({
               </div>
               <div className={styles.columnRight}>
                 <img
-                  loading={lazyLoad ? "lazy" : "eager"}
-                  srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
+                  loading="eager"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F358fb1baf0df4a24838c490ec295504f%2F55e4e291a699432fb1d92f35586e97e6"
                   alt="Column 2 Image"
                   className={styles.columnImage}
                 />
               </div>
             </div>
+          </section>
+        </div>
+        <div className={styles.builderContentWrapper}>
+          <div className={styles.builderModelContainer}>
+            <div className={styles.builderPlaceholder} />
           </div>
-        </section>
+        </div>
       </div>
+
+      {/* Second Section */}
+      <div className={styles.sectionWrapper} style={{ maxWidth }}>
+        <section className={styles.section}></section>
+      </div>
+
+      {/* Services Section */}
+      <div className={styles.servicesWrapper}>
+        <div className={styles.servicesContent}>
+          <h2 className={styles.servicesTitle}>Our Services & Packages</h2>
+          <p className={styles.servicesDescription}>
+            Explore our range of professional services and affordable packages
+            designed to suit your business needs.
+          </p>
+
+          <div className={styles.packagesGrid}>
+            <div className={styles.packageCard}>
+              <h3 className={styles.packageTitle}>Basic Package</h3>
+              <p className={styles.packageDescription}>
+                Perfect for small businesses starting out. Includes basic web
+                design and hosting.
+              </p>
+              <p className={styles.packagePrice}>₹4,999</p>
+            </div>
+
+            <div className={styles.packageCard}>
+              <h3 className={styles.packageTitle}>Pro Package</h3>
+              <p className={styles.packageDescription}>
+                Includes SEO, design, analytics, and email integrations for
+                growing brands.
+              </p>
+              <p className={styles.packagePrice}>₹9,999</p>
+            </div>
+
+            <div className={styles.packageCard}>
+              <h3 className={styles.packageTitle}>Enterprise Package</h3>
+              <p className={styles.packageDescription}>
+                Custom solutions with dedicated support, advanced integrations,
+                and scalability.
+              </p>
+              <p className={styles.packagePrice}>₹24,999</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Third Section */}
+      <div className={styles.sectionWrapper} style={{ maxWidth }}>
+        <section className={styles.section}></section>
+      </div>
+
+      {/* Builder Content */}
       <div className={styles.builderContentWrapper}>
         <div className={styles.builderModelContainer}>
           <div className={styles.builderPlaceholder} />
