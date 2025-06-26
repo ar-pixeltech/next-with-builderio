@@ -1,4 +1,4 @@
-.layout-container {
+.layoutContainer {
   height: auto;
   width: auto;
   pointer-events: auto;
@@ -10,14 +10,14 @@
     sans-serif;
 }
 
-.hidden-element {
+.hiddenElement {
   display: none;
   height: auto;
   width: auto;
   pointer-events: auto;
 }
 
-.main-wrapper {
+.mainWrapper {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -25,7 +25,7 @@
   padding: 20px;
 }
 
-.main-section {
+.mainSection {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -39,27 +39,27 @@
   margin-right: auto;
 }
 
-.content-wrapper {
+.contentWrapper {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-top: 20px;
 }
 
-.columns-container {
+.columnsContainer {
   gap: 20px;
   display: flex;
 }
 
 @media (max-width: 991px) {
-  .columns-container {
+  .columnsContainer {
     flex-direction: column;
     align-items: stretch;
     gap: 0px;
   }
 }
 
-.column-left {
+.columnLeft {
   display: flex;
   flex-direction: column;
   line-height: normal;
@@ -68,13 +68,13 @@
 }
 
 @media (max-width: 991px) {
-  .column-left {
+  .columnLeft {
     width: 100%;
     margin-left: 0;
   }
 }
 
-.image-container {
+.imageContainer {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -87,7 +87,7 @@
   padding-top: 20px;
 }
 
-.background-image {
+.backgroundImage {
   position: absolute;
   inset: 0;
   height: 100%;
@@ -96,12 +96,12 @@
   object-position: center;
 }
 
-.column-text {
+.columnText {
   background-color: rgba(206, 82, 82, 0);
   color: rgb(179, 47, 47);
 }
 
-.column-right {
+.columnRight {
   display: flex;
   flex-direction: column;
   line-height: normal;
@@ -110,13 +110,13 @@
 }
 
 @media (max-width: 991px) {
-  .column-right {
+  .columnRight {
     width: 100%;
     margin-left: 0;
   }
 }
 
-.column-image {
+.columnImage {
   aspect-ratio: 1.42;
   object-fit: cover;
   object-position: center;
@@ -127,19 +127,19 @@
   overflow: hidden;
 }
 
-.builder-content-wrapper {
+.builderContentWrapper {
   height: auto;
   width: auto;
   pointer-events: auto;
 }
 
-.builder-model-container {
+.builderModelContainer {
   height: auto;
   width: auto;
   pointer-events: auto;
 }
 
-.builder-placeholder {
+.builderPlaceholder {
   height: auto;
   width: auto;
   pointer-events: auto;
