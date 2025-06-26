@@ -4,32 +4,12 @@ import { ComponentProps } from "react";
 import { BuilderComponent, useIsPreviewing } from "@builder.io/react";
 import { BuilderContent, builder } from "@builder.io/sdk";
 import DefaultErrorPage from "next/error";
-import TwoColumnLayout from "./TwoColumnLayout";
 
 type BuilderPageProps = ComponentProps<typeof BuilderComponent>;
 
 // Replace with your Public API Key
 const PUBLIC_API_KEY = "358fb1baf0df4a24838c490ec295504f";
 builder.init(PUBLIC_API_KEY);
-
-// Register custom components
-builder.registerComponent(TwoColumnLayout, {
-  name: "TwoColumnLayout",
-  inputs: [
-    {
-      name: "maxWidth",
-      type: "number",
-      defaultValue: 1200,
-      helperText: "Maximum width of the layout container",
-    },
-    {
-      name: "lazyLoad",
-      type: "boolean",
-      defaultValue: false,
-      helperText: "Enable lazy loading for images",
-    },
-  ],
-});
 
 export function RenderBuilderContent(props: BuilderPageProps) {
   // Call the useIsPreviewing hook to determine if
